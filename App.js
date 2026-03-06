@@ -1,23 +1,35 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
+//React Element
+const heading = <h1 className="heg">Namste duniya using JSX👌</h1>;
 
-// React.createElement => ReactElement - JS Object  => HTMLElement(render)
-const heading = React.createElement(
-  "h1",
-  { id: "heading" },
-  "Hello World using React",
+
+const Title = () => (
+    <h1 className="head">
+        Tilte
+    </h1>
+)
+// React component two types - 1. Class based Component , 2. Functional based component
+
+// React Functional Component
+
+// const HeadingComponent = () => {
+//   return <h1 className="heading "> React Functional component</h1>;
+// };
+
+//  single line functional component
+// component composition
+const HeadingComponent = () => (
+    <div className="container">
+        {heading}
+        <Title/>
+    <h1 className="heading"> React Functional component</h1>
+  </div>
 );
-
-console.log(heading);
-
-
-//jsx introduction - HTML- like syntax - parcel- babel (compiler) -jsx to react create elememt 
-
-// jsx => React.createElement => ReactElement - JS Object  => HTMLElement(render)
-const jsxheading = <h1 id="heading">Namste duniya using JSX👌</h1>
-console.log(jsxheading);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
-root.render(jsxheading);
+//react element render
+// root.render(heading);
+root.render(<HeadingComponent/>);
