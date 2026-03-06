@@ -9,3 +9,10 @@ Episode 2
 2. npx parcel index.html - excute the package 
 3. remove CDN link to remove because it heavy cost to call http request, and react is present in node module easy to update the version
 4. BrowserList
+
+
+Episode 3
+1. Script to start a server
+2. React.createElement = obejct = that object on render callin it become Html
+3. JSX is not a HTLM inside javascrpit it is like html but not exact html 
+4. parcel transpile the code because it js engine understand that js code not jsk 
